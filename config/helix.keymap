@@ -43,13 +43,13 @@ As such, those are in use within the default layer at this time.*/
   // ---------------------------------------------------------------------------------------------------------------------------------
   // |                |              |             |               |                 |        |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
   // |                |              |             |   UP          |                 |        |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
-  // |                |              |   LEFT      |               |   RIGHT         |        |                                      |   H    |   J    |   K    |   L    |   ;    |   '    |
+  // |                |              |   RIGHT     |               |   LEFT          |        |                                      |   H    |   J    |   K    |   L    |   ;    |   '    |
   // |                |              |             |   DOWN        |                 |  $      |       7                   |  RBKT  |   N    |   M    |   ,    |   .    |   /    |  RET   |
   // |                |              |   .         |               |                 |        |       |                    |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
                      bindings = <
        &trans         &trans         &trans        &trans          &trans            &trans                             &trans    &trans    &trans    &trans   &trans   &trans
        &trans         &trans         &trans        &kp UP          &trans            &trans                          &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
-       &trans         &trans         &kp LEFT      &trans          &kp RIGHT         &trans                             &trans    &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
+       &trans         &trans         &kp RIGHT     &trans          &kp LEFT          &trans                             &trans    &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
        &trans         &trans         &trans        &kp DOWN        &trans            &kp DOLLAR    &trans        &kp RPAR &trans    &trans    &trans    &kp HOME &kp END  &trans
        &trans         &trans         &trans        &trans          &trans            &trans        &trans          &trans   &trans    &trans    &trans    &trans   &trans   &trans
                      >;
