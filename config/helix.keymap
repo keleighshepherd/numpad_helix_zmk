@@ -30,13 +30,13 @@ As such, those are in use within the default layer at this time.*/
  // |                | 3            |   6           |   9           |   *             |               |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
  // |  .             | 2            |   5           |   8           |   /             |               |                                      |   H    |   J    |   K    |   L    |   ;    |   '    |
  // |  0             | 1            |   4           |   7           |   NUM           |               | END       |           |  RBKT  |   N    |   M    |   ,    |   .    |   /    |  RET   |
- // |  LOWER         |              |   TAB         |   X           |   ESC           |               | HOME      |                    |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
+ // |  LOWER         | TAB          |   S           |   X           |   ESC           |               | HOME      |                    |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
                      bindings = <
        &kp KP_ENTER  &kp KP_ENTER   &kp KP_PLUS     &kp KP_MINUS    &kp BSPC          &kp DELETE                           &kp N6    &kp N7    &kp N8    &kp N9     &kp N0    &kp DEL
        &trans        &kp KP_N3      &kp KP_N6       &kp KP_N9       &kp KP_MULTIPLY   &trans                               &kp Y     &kp U     &kp I     &kp O      &kp P     &kp BSPC
        &kp KP_DOT    &kp KP_N2      &kp KP_N5       &kp KP_N8       &kp KP_DIVIDE     &trans                               &kp H     &kp J     &kp K     &kp L      &kp SEMI  &kp SQT
        &kp KP_N0     &kp KP_N1      &kp KP_N4       &kp KP_N7       &kp KP_NUM        &trans           &kp END             &kp RBKT  &kp N     &kp M     &kp COMMA &kp PERIOD &kp SLASH &kp RET
-       &mo 1         &trans         &kp TAB         &kp RS(X)       &kp ESC           &trans           &kp HOME            &kp SPACE &mo RAISE &kp LANG1 &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT
+       &mo 1         &kp TAB        &kp RS(S)       &kp RS(X)       &kp ESC           &trans           &kp HOME            &kp SPACE &mo RAISE &kp LANG1 &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT
                      >;
               };
               lower_layer {
@@ -44,14 +44,14 @@ As such, those are in use within the default layer at this time.*/
   // |                |              |             |               |                 |                |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
   // |                |              |   RIGHT     |               |                 |                |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
   // |                |              |   DOWN      |   UP          |                 |                |                                      |   H    |   J    |   K    |   L    |   ;    |   '    |
-  // |                |              |   LEFT      |               |                 |  $             |       7                   |  RBKT  |   N    |   M    |   ,    |   .    |   /    |  RET   |
+  // |                |  END         |   LEFT      |   HOME        |                 |  $             |       7                   |  RBKT  |   N    |   M    |   ,    |   .    |   /    |  RET   |
   // |                |              |   $         |   S           |                 |                |             |                    |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
                      bindings = <
        &trans         &trans         &trans         &trans          &trans            &trans                                                &trans    &trans    &trans    &trans   &trans   &trans
        &trans         &trans         &kp RIGHT      &trans          &trans            &trans                                     &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
        &trans         &trans         &kp DOWN       &kp UP          &trans            &trans                             &trans    &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
-       &trans         &trans         &kp LEFT       &trans          &trans            &kp DOLLAR         &trans        &kp RPAR &trans    &trans    &trans    &kp HOME &kp END  &trans
-       &trans         &trans         &kp DOLLAR     &kp RS(S)       &trans            &trans             &trans          &trans   &trans    &trans    &trans    &trans   &trans   &trans
+       &trans         &kp END        &kp LEFT       &kp HOME        &trans            &kp DOLLAR         &trans        &kp RPAR &trans    &trans    &trans    &kp HOME &kp END  &trans
+       &trans         &trans         &kp DOLLAR     &kp RS(X)       &trans            &trans             &trans          &trans   &trans    &trans    &trans    &trans   &trans   &trans
                      >;
               };
               raise_layer {
